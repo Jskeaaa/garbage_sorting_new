@@ -13,20 +13,10 @@ from config import (
 )
 from utils import set_seed
 
-# 删除本地的NUM_WORKERS定义，使用config.py中的定义
-
-
 class GarbageDataset(Dataset):
     """垃圾分类数据集"""
     
     def __init__(self, data_dir, transform=None):
-        """
-        初始化垃圾分类数据集
-        
-        Args:
-            data_dir (str): 数据集路径
-            transform (callable, optional): 应用于图像的转换
-        """
         self.data_dir = data_dir
         self.transform = transform
         self.classes = CLASSES
@@ -75,14 +65,6 @@ class TransformedSubset(Dataset):
     """转换后的数据子集，用于对数据子集应用不同的变换"""
     
     def __init__(self, subset, transform, full_dataset):
-        """
-        初始化转换后的数据子集
-        
-        Args:
-            subset: 数据子集
-            transform: 应用的变换
-            full_dataset: 完整数据集，用于获取图像路径和标签
-        """
         self.subset = subset
         self.transform = transform
         self.full_dataset = full_dataset

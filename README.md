@@ -1,7 +1,7 @@
 # 垃圾分类系统
 
 基于ResNet-50的垃圾分类系统，可以将垃圾图像分类为6个类别：纸板(cardboard)、玻璃(glass)、金属(metal)、纸张(paper)、塑料(plastic)和其他垃圾(trash)。
-
+华宇LGJ（coding)
 ## 数据集
 
 数据集位于`Garbage classification`文件夹中，包含6个类别的图像：

@@ -7,13 +7,6 @@ class GarbageClassifier(nn.Module):
     """基于ResNet-50的垃圾分类模型"""
     
     def __init__(self, num_classes=NUM_CLASSES, pretrained=PRETRAINED):
-        """
-        初始化模型
-        
-        Args:
-            num_classes (int): 分类类别数
-            pretrained (bool): 是否使用预训练模型
-        """
         super(GarbageClassifier, self).__init__()
         
         # 加载预训练的ResNet-50模型
