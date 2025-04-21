@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+
 
 import os
 import sys
@@ -434,7 +433,7 @@ class GarbageClassifierApp(QMainWindow):
                           "垃圾分类系统\n\n"
                           "基于ResNet-50的垃圾分类系统，可以将垃圾图像分类为6个类别：\n"
                           "纸板(cardboard)、玻璃(glass)、金属(metal)、纸张(paper)、塑料(plastic)和其他垃圾(trash)。\n\n"
-                          "开发者: AI助手")
+                          "开发者: Pmocoding")
     
     def resizeEvent(self, event):
         """窗口大小改变事件"""
